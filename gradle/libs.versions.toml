@@ -32,7 +32,7 @@ androidx-test-version = "1.4.0"
 androidx-work-version = "2.7.0"
 
 kotlinx-atomicfu = "0.16.3"
-kotlinx-coroutines = "1.5.2"
+kotlinx-coroutines = "1.6.0"
 kotlinx-knit = "0.3.0"
 
 google-dagger = "2.40"
