@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CoroutineTestExtension</title>
+</head><body><link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script src="https://unpkg.com/kotlin-playground@1" data-selector="code.runnablesample"></script><script src="https://unpkg.com/kotlin-playground@1" data-selector="code.runnablesample"></script><script src="https://unpkg.com/kotlin-playground@1" data-selector="code.runnablesample"></script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../../scripts/main.js" async></script>
+  
+    <div id="container">
+      <div id="leftColumn"><a href="../../../index.html">
+            <div id="logo"></div>
+          </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <script type="text/javascript" src="../../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
+
+        <div class="main-content" id="content" pageids="dispatch-test-junit5::dispatch.test/CoroutineTestExtension///PointingToDeclaration//-273770727">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../index.html">dispatch-test-junit5</a>/<a href="../index.html">dispatch.test</a>/<a href="index.html">CoroutineTestExtension</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Coroutine</span><wbr><span>Test</span><wbr><span><span>Extension</span></span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block">@<span data-unresolved-link="kotlinx.coroutines/ExperimentalCoroutinesApi///PointingToDeclaration/">ExperimentalCoroutinesApi</span></div></div>class <a href="index.html">CoroutineTestExtension</a>(scopeFactory: <a href="-scope-factory/index.html">CoroutineTestExtension.ScopeFactory</a>) : <span data-unresolved-link="org.junit.jupiter.api.extension.support/TypeBasedParameterResolver///PointingToDeclaration/">TypeBasedParameterResolver</span>&lt;<a href="../../../dispatch-test/dispatch.test/-test-provided-coroutine-scope/index.html">TestProvidedCoroutineScope</a>&gt; , <span data-unresolved-link="org.junit.jupiter.api.extension/BeforeEachCallback///PointingToDeclaration/">BeforeEachCallback</span>, <span data-unresolved-link="org.junit.jupiter.api.extension/AfterEachCallback///PointingToDeclaration/">AfterEachCallback</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">JUnit 5 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/index.html">ParameterResolver</a><span data-unresolved-link="org.junit.jupiter.api.extension/Extension///PointingToDeclaration/">Extension</span> for injecting and managing a <a href="../../../dispatch-test/dispatch.test/-test-provided-coroutine-scope/index.html">TestProvidedCoroutineScope</a> in a test instance. This creates a new instance of <a href="../../../dispatch-test/dispatch.test/-test-provided-coroutine-scope/index.html">TestProvidedCoroutineScope</a> each time the scope is injected, optionally using a custom <a href="-scope-factory/index.html">ScopeFactory</a>.</p><p class="paragraph">If this extension is initialized via <span data-unresolved-link="org.junit.jupiter.api.extension/RegisterExtension///PointingToDeclaration/">RegisterExtension</span>, there is also a <a href="scope.html">scope</a> property which is automatically managed.</p><h3 class=""> Before Each:</h3><p class="paragraph"><span data-unresolved-link="kotlinx.coroutines/Dispatchers/Main/#/PointingToDeclaration/">Dispatchers.Main</span> is set to the <span data-unresolved-link="kotlinx.coroutines.test/TestCoroutineDispatcher///PointingToDeclaration/">TestCoroutineDispatcher</span> used by the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a>.</p><h3 class=""> After Each:</h3><ul><li><p class="paragraph"><span data-unresolved-link="kotlinx.coroutines.test/TestCoroutineScope/cleanupTestCoroutines/#/PointingToDeclaration/">cleanupTestCoroutines</span> is called to ensure there are no leaking coroutines.  Any unfinished coroutine will throw an <span data-unresolved-link="kotlinx.coroutines.test/UncompletedCoroutinesError///PointingToDeclaration/">UncompletedCoroutinesError</span>.</p></li><li><p class="paragraph"><span data-unresolved-link="kotlinx.coroutines/Dispatchers/Main/#/PointingToDeclaration/">Dispatchers.Main</span> is reset via <span data-unresolved-link="kotlinx.coroutines.test//resetMain/kotlinx.coroutines.Dispatchers#/PointingToDeclaration/">Dispatchers.resetMain</span>.</p></li></ul><h3 class=""> Requires JUnit 5.</h3><div class="sample-container"><code class="" theme="idea"><pre>dependencies {<br>  testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")<br>}</pre></code></div></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button><button class="section-tab" data-togglable="Sources">Sources</button><button class="section-tab" data-togglable="Samples">Samples</button><button class="section-tab" data-togglable="See also">See also</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Samples</h2>
+              <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Samples"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="sample-container"><code class="runnablesample monospace" theme="idea"><pre>import dispatch.test.TestProvidedCoroutineScope
+import dispatch.test.coroutineTestExtension
+import io.kotest.matchers.shouldBe
+import io.kotest.matchers.types.shouldBeInstanceOf
+import kotlinx.coroutines.runBlocking
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.extension.RegisterExtension
+fun main() { 
+   //sampleStart 
+   class RegisterSample {
+
+  @JvmField
+  @RegisterExtension
+  val extension = coroutineTestExtension()
+
+  @Test
+  fun `extension should be a TestProvidedCoroutineScope`() = runBlocking&lt;Unit&gt; {
+
+    extension.scope.shouldBeInstanceOf&lt;TestProvidedCoroutineScope&gt;()
+  }
+
+  @Test
+  fun `extension should automatically inject into functions`(scope: TestProvidedCoroutineScope) =
+    runBlocking {
+
+      val subject = SomeClass(scope)
+
+      val resultDeferred = subject.someFunction()
+
+      scope.advanceUntilIdle()
+
+      resultDeferred.await() shouldBe someValue
+    }
+} 
+   //sampleEnd
+}</pre></code></div><div class="sample-container"><code class="runnablesample monospace" theme="idea"><pre>import dispatch.test.TestProvidedCoroutineScope
+import dispatch.test.coroutineTestExtension
+import io.kotest.matchers.shouldBe
+import kotlinx.coroutines.CoroutineName
+import kotlinx.coroutines.runBlocking
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.extension.RegisterExtension
+fun main() { 
+   //sampleStart 
+   class RegisterWithFactorySample {
+
+  @JvmField
+  @RegisterExtension
+  val extension = coroutineTestExtension {
+    TestProvidedCoroutineScope(context = CoroutineName("custom name"))
+  }
+
+  @Test
+  fun `extension should provide a scope from the custom factory`() = runBlocking {
+
+    extension.scope.coroutineContext[CoroutineName] shouldBe CoroutineName("custom name")
+  }
+} 
+   //sampleEnd
+}</pre></code></div><div class="sample-container"><code class="runnablesample monospace" theme="idea"><pre>import dispatch.test.CoroutineTestExtension
+import dispatch.test.TestProvidedCoroutineScope
+import io.kotest.matchers.shouldNotBe
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.extension.ExtendWith
+fun main() { 
+   //sampleStart 
+   @ExtendWith(CoroutineTestExtension::class)
+class CoroutineTestExtensionExtendWithSample(
+  val testScope: TestProvidedCoroutineScope
+) {
+
+  @Test
+  fun `injected scope should be injected`() {
+
+    testScope shouldNotBe null
+  }
+} 
+   //sampleEnd
+}</pre></code></div></div></div>
+              <h2 class="">See also</h2>
+              <div data-togglable="See also">
+                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dispatch-test-junit5:dokkaHtmlPartial/main"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes RowTitle"><div class=""><span class="inline-flex"><a href="index.html"><span>dispatch.</span><wbr><span>test.</span><wbr><span>Coroutine</span><wbr><span>Test</span><wbr><span><span>Extension</span></span></a></span><span class="inline-flex"><div data-togglable="See also"></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes RowTitle"><div class=""><span class="inline-flex"><a href="../-coroutine-test/index.html"><span>dispatch.</span><wbr><span>test.</span><wbr><span>Coroutine</span><wbr><span><span>Test</span></span></a></span><span class="inline-flex"><div data-togglable="See also"></div></span></div><div></div></div></div></div></div></div></div>
+              </div>
+              <h2 class="">Parameters</h2>
+              <div data-togglable="Parameters">
+                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dispatch-test-junit5:dokkaHtmlPartial/main"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><span>scope</span><wbr><span><span>Factory</span></span></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph"><i>optional</i> factory for a custom <a href="../../../dispatch-test/dispatch.test/-test-provided-coroutine-scope/index.html">TestProvidedCoroutineScope</a>.  If a factory is not provided, the resultant scope uses the same <span data-unresolved-link="kotlinx.coroutines.test/TestCoroutineDispatcher///PointingToDeclaration/">TestCoroutineDispatcher</span> for each property in its <a href="../../../dispatch-test/dispatch.test/-test-dispatcher-provider/index.html">TestDispatcherProvider</a></p></div></div></div></div></div></div></div></div></div>
+              </div>
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="2118637540%2FConstructors%2F-273770727" anchor-label="CoroutineTestExtension" id="2118637540%2FConstructors%2F-273770727" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-coroutine-test-extension.html">CoroutineTestExtension</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2118637540%2FConstructors%2F-273770727"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="-coroutine-test-extension.html">CoroutineTestExtension</a>(scopeFactory: <a href="-scope-factory/index.html">CoroutineTestExtension.ScopeFactory</a> = ScopeFactory())<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Types</h2>
+              <div class="table" data-togglable="Types"><a data-name="-726200469%2FClasslikes%2F-273770727" anchor-label="ScopeFactory" id="-726200469%2FClasslikes%2F-273770727" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-scope-factory/index.html"><span>Scope</span><wbr><span><span>Factory</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-726200469%2FClasslikes%2F-273770727"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block">@<span data-unresolved-link="kotlinx.coroutines/ExperimentalCoroutinesApi///PointingToDeclaration/">ExperimentalCoroutinesApi</span></div></div>open class <a href="-scope-factory/index.html">ScopeFactory</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Class used to create the <a href="../../../dispatch-test/dispatch.test/-test-provided-coroutine-scope/index.html">TestProvidedCoroutineScope</a> used in <a href="index.html">CoroutineTestExtension</a>.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="1204379810%2FFunctions%2F-273770727" anchor-label="supportsParameter" id="1204379810%2FFunctions%2F-273770727" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#1204379810%2FFunctions%2F-273770727"><span>supports</span><wbr><span><span>Parameter</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1204379810%2FFunctions%2F-273770727"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dispatch-test-junit5:dokkaHtmlPartial/main"><div class="symbol monospace">override fun <a href="index.html#1204379810%2FFunctions%2F-273770727">supportsParameter</a>(p0: <span data-unresolved-link="org.junit.jupiter.api.extension/ParameterContext///PointingToDeclaration/">ParameterContext</span>, p1: <span data-unresolved-link="org.junit.jupiter.api.extension/ExtensionContext///PointingToDeclaration/">ExtensionContext</span>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="-149253766%2FProperties%2F-273770727" anchor-label="scope" id="-149253766%2FProperties%2F-273770727" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="scope.html">scope</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-149253766%2FProperties%2F-273770727"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dispatch-test-junit5:dokkaHtmlPartial/main"><a data-name="-149253766%2FProperties%2F-273770727" anchor-label="scope" id="-149253766%2FProperties%2F-273770727" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="scope.html">scope</a>: <a href="../../../dispatch-test/dispatch.test/-test-provided-coroutine-scope/index.html">TestProvidedCoroutineScope</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-149253766%2FProperties%2F-273770727" anchor-label="scope" id="-149253766%2FProperties%2F-273770727" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"></a><p class="paragraph">A lazy <code>TestProvidedCoroutineScope</code> instance which is reset via <span data-unresolved-link="kotlinx.coroutines.test/TestCoroutineScope/cleanupTestCoroutines/#/PointingToDeclaration/">cleanUpTestCoroutines</span> after each test.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Sources</h2>
+              <div class="table" data-togglable="Sources"><a data-name="334305619%2FSource%2F-273770727" anchor-label="https://github.com/RBusarow/Dispatch/blob/main/dispatch-test-junit5/src/main/java/dispatch/test/CoroutineTestExtension.kt#L27" id="334305619%2FSource%2F-273770727" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":dispatch-test-junit5:dokkaHtmlPartial/main" data-filterable-set=":dispatch-test-junit5:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="https://github.com/RBusarow/Dispatch/blob/main/dispatch-test-junit5/src/main/java/dispatch/test/CoroutineTestExtension.kt#L27">jvm source</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="334305619%2FSource%2F-273770727"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  
+</body></html>
+
+
